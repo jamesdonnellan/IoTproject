@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="charts.css">
+    <title>ThingSpeak Charts</title>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<header>
+    <nav>
+        <div class="logo">
+            <a href="#">SmartInhaler</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="SmartInhaler.html">Home</a></li>
+            <li><a href="Charts.html">Charts</a></li>  
+        </ul>
+    </nav>
+</header>
+
+<!-- ThingSpeak Data Test -->
+<section id="Charts">
+    
+    <div class="Chart">
+    <h1>Live Enviornmental Readings</h1>
+    </div>
+
+    <div class="dust">
+    <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2767873/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=GP271014AU&type=line&xaxis=Time&yaxis=Dust+Level"></iframe>
+    <h2>
+    -Per hour, a good PM2.5 reading is anything less than 25µg/m3
+    <br>-Per hour, an okay PM2.5 reading is anywhere betwwen 25-50µg/m3
+    <br>-Per hour, a dangerous PM2.5 reading is anywhere from 50-300µg/m3
+    </h2>
+    </div>
+    
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>2024 SmartInhaler | JD </p>
+</footer>
+
+</body>
+</html>

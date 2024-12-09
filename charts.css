@@ -1,0 +1,97 @@
+/* Sets page to fit the window size */
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body
+{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes full height */
+}
+
+header 
+{
+    background: #007BFF;
+    color: white;
+    padding: 10px 0;
+}
+
+.logo a
+{
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+header nav ul 
+{
+    list-style: none;
+    float: right;
+    margin-right: 20px;
+}
+
+header nav ul li 
+{
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a 
+{
+    color: white;
+    text-decoration: none;
+}
+
+/* ThingSpeak Charts */
+#Charts 
+{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: black;
+}
+.Chart h1
+{
+    font-family: Arial, sans-serif;
+}
+.dust
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap:wrap;
+}
+.dust h2
+{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    margin-top: 40px;
+    margin-left: 40px;
+    color: black;
+}
+
+
+/* Footer */
+footer 
+{
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto; /* Pushes footer to the bottom */
+    font-size: 14px;
+}
+
