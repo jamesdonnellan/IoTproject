@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "stylesheet.css">
+
     <title>Smart Inhaler</title>
 </head>
 <body>
@@ -14,13 +15,29 @@
         <div class="logo">
             <a href="#">SmartInhaler</a>
         </div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="Charts.html">Charts</a></li>  
-        </ul>
-    </nav>
+
+
+
+<!-- W3schools menu testing -->
+
+<div id="testNav" class="overlay">
+<!--Button to close the overlway navigation-->
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+<!--overlay content-->
+<div id="overlay-content">
+<a href="#about">About</a>
+<a href="Charts.html">Charts</a>
+<a href="#video">My IoT Video</a>
+<a href="#services">Services</a>
+</div>
+
+</div>
+<!-- Use any element to open/show the overlay navigation menu-->
+<span style="cursor: pointer;" onclick="openNav()"> &#9776; </span>
+</nav>
 </header>
+
 
 <!-- Welcome Section -->
 <section class="welcome">
@@ -30,36 +47,63 @@
 
 <!-- About Section -->
 <section id="about">
-    <h2>About Us</h2>
-    <p>We use innovative technology to help you understand and manage your asthma. Our devices aim to battle asthma by bringing down the risk of asthma influenced death.</p>
+    <h2>How does SmartInhaler work?</h2>
+    <p>We multiple sensors to constantly measure enviornmental readings to help you understand and manage your asthma. My IoT device 
+        aim to battle asthma by bringing down the risk of asthma influenced death.</p>
+    <img src="I2.png">
+   
 </section>
+<section id="about1">
+    <h><b>Reading Recieved</b></h>
+    <p>The device will show current live readings of both dust and pollen levels in your current location, this will notify users
+        of when it is reccomended to take a puff from their inhaler.
+    </p>
+    <img src="I5.png">
+</section>
+
+<section id="about2">
+    <h><b>Breathe Easier</b></h>
+    <p>After reading the live readings from our device, take your inhaler to prevent any discomfort in the chest/
+    breathing. </p>
+    <img src="I4.png">
+</section>
+
+<!-- Video Section -->
+ <section id="video">
+    <h><b>My IoT Video</b></h>
+    <video width="600" height="450" controls>
+        <source src="iotvideo.mp4">
+    </video>
+ </section>
 
 <!-- Services Section -->
 <section id="services">
-    <h2>Our Services</h2>
+    <h2>Further Details</h2>
     <div class="service">
-        <h3>Enviornmental hazard detection</h3>
-        <p>Our sensors detect dangerous pollen and dust levels that could potentially bring on sudden atshma attacks.By tracking PM 2.5 and 1.0 levels we 
-            alert you before issues arise.
+        <h3>Coming Soon</h3>
+        <p>
         </p>
     </div>
 
     <div class="service">
-        <h3>Alert Notifications</h3>
-        <p>Our website alerts you of current pollen and dust levels that may affect your atshma. Our 
-            innovative software sends instant warnings on our website for when you should use your inhaler based off of current enviornmental readings.</p>
+        <h3>Enviornmental hazard detection</h3>
+        <p>Our sensors detect dangerous pollen and dust levels that could potentially bring on sudden atshma attacks.By tracking PM 2.5 and 1.0 levels we 
+            alert you before issues arise.</p>
     </div>
     <div class="service">
-        <h3>Data Storing</h3>
-        <p>We store your data in order to understand your asthma better, we keep track of when you use your inhaler most so we can send you a personalised notification
-            when you need it the most.</p>
+        <h3>Live Readings</h3>
+        <p>Our website constantly updates the live enviornmental readings from your sensors
+            by displaying readings on our web server. Never worry about atshma readings again as our 
+            constant refreshing webpage keeps you updated.
+        </p>
     </div>
 </section>
 
 <!-- Footer -->
 <footer>
-    <p> 2024 SmartInhaler | JD.</p>
+    <p> 2025 SmartInhaler | JD.</p>
 </footer>
 
+<script src="SmartInhaler.js"></script>
 </body>
 </html>
