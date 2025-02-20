@@ -100,6 +100,7 @@ header .logo a
 /* Welcome Section */
 .welcome 
 {
+    
     background-image:url("I3.jpg");
     max-width: 100%;
     height: auto;
@@ -123,86 +124,45 @@ header .logo a
 }
 
 /* About Section */
-#about 
+
+.flex-container
 {
-    padding: 60px 20px;
-    text-align: center;
-    background-color: white; 
-    margin: 20px;
-    padding: 20px;
+    background-color: white;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    display: inline-block;
-    text-align: center;
+    display: flex;
+    margin-bottom: 8px;
 }
 
-#about h2 
+.flex-container > div
 {
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-#about p
-{
-    font-size:20px;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-#about1 
-{
-    padding: 60px 20px;
-    text-align: center;
-    background-color: white; 
-    margin: 20px;
-    padding: 20px;
+    background-color: black;
+    color: white;
+    border: 1px solid;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    display: inline-block;
-    text-align: center;
-}
-
-#about1 h
-{
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-#about1 p
-{
+    flex:1;
     font-size: 20px;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-
-#about2 
-{
-    padding: 60px 20px;
-    background-color: white; 
-    margin: 20px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    display: inline-block;
+    line-height: 20px;
+    margin: 10px;
+    padding: 16px;
+    width: auto;
     text-align: center;
-}
+} 
 
-#about2 h
+.flex-container > div h
 {
     font-size: 32px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
-#about2 p
+h1
 {
-    font-size: 20px;
-    max-width: 600px;
-    margin: auto;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
+
 
 /* Video */
 #video
@@ -213,45 +173,6 @@ header .logo a
     text-align: center;
 }
 
-
-/* Services */
-#services 
-{
-    padding: 60px 20px;
-    text-align: center;
-    background-color: white;
-    align-items: center;
-}
-
-#services h2 
-{
-    font-size: 32px;
-    margin-bottom: 40px;
-}
-
-.service h3
-{
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.service 
-{
-    background-color:black;
-    color: white;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    display: inline-block;
-    text-align: left;
-}
-
-.service p 
-{
-    font-size: 16px;
-}
 
 /* Footer */
 footer 

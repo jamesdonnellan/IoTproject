@@ -34,7 +34,7 @@
 
 </div>
 <!-- Use any element to open/show the overlay navigation menu-->
-<span style="cursor: pointer;" onclick="openNav()"> &#9776; </span>
+<span style="cursor: pointer;" onclick="openNav()"> &#9776; <b>MENU</b></span>
 </nav>
 </header>
 
@@ -45,29 +45,35 @@
     <p>Asthma management made simple.</p>
 </section>
 
-<!-- About Section -->
-<section id="about">
-    <h2>How does SmartInhaler work?</h2>
-    <p>We multiple sensors to constantly measure enviornmental readings to help you understand and manage your asthma. My IoT device 
-        aim to battle asthma by bringing down the risk of asthma influenced death.</p>
-    <img src="I2.png">
+<!-- About Section using flexbox -->
+<div class="flex-container">
+
+<div>
+    <h><b>How does SmartInhaler work?</b></h>
+    <p>I use multiple sensors to constantly measure enviornmental readings to help you understand and manage your asthma. My IoT device 
+        aim to battle asthma by bringing down the risk of asthma influenced death.
+    </p>
+    
+</div>    
    
-</section>
-<section id="about1">
+<div>
     <h><b>Reading Recieved</b></h>
     <p>The device will show current live readings of both dust and pollen levels in your current location, this will notify users
         of when it is reccomended to take a puff from their inhaler.
     </p>
-    <img src="I5.png">
-</section>
+    
+</div>   
 
-<section id="about2">
+
+<div>
     <h><b>Breathe Easier</b></h>
     <p>After reading the live readings from our device, take your inhaler to prevent any discomfort in the chest/
-    breathing. </p>
-    <img src="I4.png">
-</section>
+    breathing. 
+    </p>
+    
+</div>
 
+</div>
 <!-- Video Section -->
  <section id="video">
     <h><b>My IoT Video</b></h>
@@ -77,27 +83,28 @@
  </section>
 
 <!-- Services Section -->
-<section id="services">
-    <h2>Further Details</h2>
-    <div class="service">
-        <h3>Coming Soon</h3>
+<h1>Further Details</h1>
+<div class="flex-container">
+   
+    <div>
+        <h></h>
         <p>
         </p>
     </div>
 
-    <div class="service">
-        <h3>Enviornmental hazard detection</h3>
-        <p>Our sensors detect dangerous pollen and dust levels that could potentially bring on sudden atshma attacks.By tracking PM 2.5 and 1.0 levels we 
+    <div>
+        <h>Enviornmental hazard detection</h>
+        <p>The sensors detect dangerous pollen and dust levels that could potentially bring on sudden atshma attacks.By tracking PM 2.5 and 1.0 levels my device 
             alert you before issues arise.</p>
     </div>
-    <div class="service">
-        <h3>Live Readings</h3>
-        <p>Our website constantly updates the live enviornmental readings from your sensors
-            by displaying readings on our web server. Never worry about atshma readings again as our 
+    <div>
+        <h>Live Readings</h>
+        <p>My website constantly updates the live enviornmental readings from the sensors
+            by displaying readings on the web server. Never worry about atshma readings again as the 
             constant refreshing webpage keeps you updated.
         </p>
     </div>
-</section>
+</div>
 
 <!-- Footer -->
 <footer>
