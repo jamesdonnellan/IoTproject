@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="charts.css">
-    <title>ThingSpeak Charts</title>
+    <link rel="icon" type="image/x-icon" href="JDlogo1.png">
+    <title>Smart Inhaler</title>
 </head>
 <body>
 
 <!-- Navigation Bar -->
 <header>
-    <nav>
-        <div class="logo">
-            <a href="#">SmartInhaler</a>
+    <div class="left-side">
+        <a href=SmartInhaler.html><b>SmartInhaler</b></a>
+    </div>
+    <div class="right-side">
+        <h1>Live Enviornmental Readings</h1>
+        <span style="cursor: pointer;" onclick="openNav()">&#9776;</span>
         </div>
+    <nav>
         <div id="testNav" class="overlay">
             <!--Button to close the overlway navigation-->
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -24,52 +29,105 @@
             </div>
             
             </div>
-            <!-- Use any element to open/show the overlay navigation menu-->
-            <span style="cursor: pointer;" onclick="openNav()">&#9776; </span>
             </nav>
     </nav>
+    
 </header>
 
 <!-- ThingSpeak Data Test -->
 <section id="Charts">
-    
-    <div class="Chart">
-    <h1>Live Enviornmental Readings</h1>
+    <div class = "FetchDust">
+    <p> Dust <span id="dustValue">Loading...</span></p>
     </div>
-
     <div class="dust">
+        
         <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2767873/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Dust+Levels&type=line&xaxis=Time&yaxis=Dust+Level+%28PM+2.5%29"></iframe>
     <h2>
-    -Per hour, a good PM2.5 reading is anything less than 25µg/m3
-    <br>-Per hour, an okay PM2.5 reading is anywhere betwwen 25-50µg/m3
-    <br>-Per hour, a dangerous PM2.5 reading is anywhere from 50-300µg/m3
+    <u>Understanding Dust Levels</u>
+    <br>
     </h2>
+    <p>
+        <br>
+    - Good - PM2.5 reading is anything less than 25µg/m3
+    <br><br>
+    - Moderate - PM2.5 reading is anywhere betwwen 25-50µg/m3
+    <br><br>
+    - Dangerous - PM2.5 reading is anywhere from 50-300µg/m3
+    </p>
     </div>
- 
-</section>
 
-<section id="test">
-    <div class="flex-container">
-        <table>
-        <tr>
-            <th> Sensor</th>
-            <th> Value</th>
-            <th> Unit</th>
-        </tr>
-        <tr>
-            <td>Dust <br></td>
-           
-            <td>5.6 (low)</td>
-            <td>PM2.5</td>
-        </tr>
-        </table>
-        </div>
+    <div class ="FetchPollen">
+        <p> Pollen <span id="pollenValue">Loading...</span></p>
+    </div>
+    <div class="pollen">
+        
+        <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2767873/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Pollen+Levels&type=line&xaxis=Time&yaxis=Pollen+Levels%28grains%2Fm%C2%B3%29"></iframe>
+    <h2>
+       <u>Understanding Pollen Levels</u>
+       <br>
+    </h2>
+    <p>
+        <br>
+    -Good - 0-14 grain/m3, this results in minimal allergic symtpoms
+    <br><br>
+    - Moderate - 5-89 grain/m3, this results in mild symptoms (i.e sneezing, wheezing)
+    <br><br>
+    - Dangerous - 200-1,500+ grain/m3, this results in dangerous symptoms (i.e swelling of throat, chest pain)
+    </p>
+    </div>
+    
+    <div class="FetchTemperature">
+        <p> Temperature <span id="tempValue">Loading...</span></p>
+    </div>
+    <div class="temperature">
+        <iframe width="460" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2767873/widgets/1069547"></iframe>
+        <h2>
+            <u>Understanding Temperature Levels</u>
+            <br>
+        </h2>
+        <p>
+            <br>
+            - Dangerous (Cold) - Anything below 10°C, this can cause airway constriction.
+            <br>
+            <br>
+            - Ideal - Anything between 20-22°C is considered good ventilation. 
+            <br>
+            <br>
+            - Dangerous (Hot) - Anything above 27°C with high humidity, this increases airway inflamation.
+        </p>    
+       
+    </div>
+    <div class = "FetchHumidity">
+         <p> Humidity <span id="humidityValue">Loading...</span></p>
+    </div>
+    <div class="humidity">
+       
+    <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2767873/widgets/1069549"></iframe>
+    <h2>
+        <b>
+        <u>Understanding Humidity Levels</u>
+        </b>
+        <br><br>
+        
+    </h2>
+    <p>
+        <br>
+        - Good - 40-50%, this results in comfortable breathing
+        <br><br>
+      
+        - Moderate - 30-40%, this can result in mild irritation (i.e dry throat, cough, dried airways)
+        <br> <br>
+       
+        - Dangerous - 0-20% or 70%+, this can cause asthma flare ups (i.e difficulty breathing, increased mucus buildup, wheezing)
+        <br><br>
+        
+    </p>
+    </div>
 </section>
-
 
 <!-- Footer -->
 <footer>
-    <p>2024 SmartInhaler | JD </p>
+    <p1>2025 SmartInhaler | JD </p1>
 </footer>
 
 <script src="SmartInhaler.js"></script> 
