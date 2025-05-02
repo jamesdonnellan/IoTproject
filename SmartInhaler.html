@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "stylesheet.css">
-
+    <link rel="icon" type="image/x-icon" href="JDlogo1.png">
     <title>Smart Inhaler</title>
 </head>
 <body>
 
 <!-- Navigation Bar -->
+<div id="NavBar">
+        <a href=SmartInhaler.html><b>JD</b></a>
+  
+    <div id="MenuButton">
+            <span style="cursor: pointer;" onclick="openNav()">&#9776;</span>
+    </div>
+</div>
+
 <header>
-    <nav>
-        <div class="logo">
-            <a href="#">SmartInhaler</a>
-        </div>
-
-
-
+<nav>
 <!-- W3schools menu testing -->
 
 <div id="testNav" class="overlay">
@@ -25,90 +27,110 @@
 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
 <!--overlay content-->
-<div id="overlay-content">
-<a href="#about">About</a>
-<a href="Charts.html">Charts</a>
-<a href="#video">My IoT Video</a>
-<a href="#services">Services</a>
+    <div id="overlay-content">
+        <a href="#about">About</a>
+        <a href="Charts.html">Charts</a>
+        <a href="#video">My IoT Video</a>
+        <a href="#further-info">Further Information</a>
+    </div>
 </div>
-
-</div>
-<!-- Use any element to open/show the overlay navigation menu-->
-<span style="cursor: pointer;" onclick="openNav()"> &#9776; <b>MENU</b></span>
 </nav>
 </header>
 
-
 <!-- Welcome Section -->
+
 <section class="welcome">
+    
     <h1>Welcome to Smart Inhaler</h1>
     <p>Asthma management made simple.</p>
+
+    
 </section>
 
-<!-- About Section using flexbox -->
-<div class="flex-container">
-
-<div>
-    <h><b>How does SmartInhaler work?</b></h>
-    <p>I use multiple sensors to constantly measure enviornmental readings to help you understand and manage your asthma. My IoT device 
-        aim to battle asthma by bringing down the risk of asthma influenced death.
-    </p>
+<!-- About Section -->
+ <section id="about">
     
-</div>    
-   
-<div>
-    <h><b>Reading Recieved</b></h>
-    <p>The device will show current live readings of both dust and pollen levels in your current location, this will notify users
-        of when it is reccomended to take a puff from their inhaler.
-    </p>
-    
-</div>   
-
-
-<div>
-    <h><b>Breathe Easier</b></h>
-    <p>After reading the live readings from our device, take your inhaler to prevent any discomfort in the chest/
-    breathing. 
-    </p>
-    
+<div class="description">
+    <div>
+        <h><b>How does SmartInhaler work?</b></h>
+        <br>
+        <p>I use multiple sensors to constantly measure enviornmental readings to help you understand and manage your asthma. 
+            When a reading goes too high, it will display the reading on the OLED screen, the buzzer will also go off, alerting users of the high recorded
+            reading.
+            My IoT device 
+            aim to battle asthma by bringing down the risk of asthma influenced death. 
+        </p>
+    </div>
 </div>
 
-</div>
+
+    <div class="flex-container1">
+        <div>
+            <h><b>Buzzer goes off</b></h>
+            <p>The buzzer will alert users when live readings of dust, temperature and pollen levels in your current location reach an unsafe level.
+            </p>
+        <img src="i2.png">
+        </div>
+
+        <div>
+        <h><b>Reading Recieved</b></h>
+        <p>As well as this, the OLED screen will show current live readings of dust, temperature and pollen levels in your current location, this will notify users
+            of when it is reccomended to take a puff from their inhaler.
+        </p>
+        <img src="I5.png">
+        </div>
+
+        <div>
+        <h><b>Breathe Easier</b></h>
+        <p>After reading the live readings from our device, take your inhaler to prevent any discomfort in the chest/
+        breathing. 
+        </p>
+        <img src="I4.png">
+        </div>
+    </div>
+</section>
 <!-- Video Section -->
  <section id="video">
     <h><b>My IoT Video</b></h>
     <video width="600" height="450" controls>
-        <source src="iotvideo.mp4">
+    <source src="iotvideo.mp4">
     </video>
  </section>
 
-<!-- Services Section -->
-<h1>Further Details</h1>
-<div class="flex-container">
-   
-    <div>
-        <h></h>
-        <p>
-        </p>
-    </div>
+<!-- Further Information Section Using Flexbox-->
+ <section id="further-info">
+    <h1>Further Details</h1>
+    <div class="flex-container2">
+    
+        <div>
+            <h><b>What sensors did I use?</b></h>
+            <p>GP2Y1014AU - Dust Sensor
+                <br>
+                DHT11 - Temperature Sensor
+                <br>
+                SN-GCJA5 - Pollen Sensor
+            </p>
+        </div>
 
-    <div>
-        <h>Enviornmental hazard detection</h>
-        <p>The sensors detect dangerous pollen and dust levels that could potentially bring on sudden atshma attacks.By tracking PM 2.5 and 1.0 levels my device 
-            alert you before issues arise.</p>
-    </div>
-    <div>
-        <h>Live Readings</h>
-        <p>My website constantly updates the live enviornmental readings from the sensors
-            by displaying readings on the web server. Never worry about atshma readings again as the 
-            constant refreshing webpage keeps you updated.
-        </p>
-    </div>
-</div>
 
+        <div>
+            <h><b>Enviornmental hazard detection</b></h>
+            <p>The sensors detect dangerous pollen and dust levels that could potentially bring on sudden atshma attacks.By tracking PM 2.5 and 1.0 levels my device 
+                alert you before issues arise.</p>
+        </div>
+
+        <div>
+            <h><b>Live Readings</b></h>
+            <p>My website constantly updates the live enviornmental readings from the sensors
+                by displaying readings on the web server. Never worry about atshma readings again as the 
+                constant refreshing webpage keeps you updated.
+            </p>
+        </div>
+    </div>
+</section>
 <!-- Footer -->
 <footer>
-    <p> 2025 SmartInhaler | JD.</p>
+    <p> 2025 SmartInhaler | JD</p>
 </footer>
 
 <script src="SmartInhaler.js"></script>
